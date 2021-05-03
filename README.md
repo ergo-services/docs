@@ -9,8 +9,10 @@ description: Ergo Framework
 Becoming a super hero is a fairly straight forward process:
 
 ```
-$ give me super-powers
+$ give me super-powers from the command line
 ```
+
+another comment here
 
 {% hint style="info" %}
  Super-powers are granted randomly so please submit an issue if you're not happy with yours.
