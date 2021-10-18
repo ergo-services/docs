@@ -29,3 +29,9 @@
 * [Custom Behavior](advanced/custom-behavior.md)
 * [Custom Handshake](advanced/custom-handshake.md)
 * [Custom Proto](advanced/custom-proto.md)
+
+## Cloud
+
+* [Overview](cloud/overview.md)
+* [Nodes and Actors](cloud/nodes-and-actors.md)
+* [Observer](cloud/observer.md)
