@@ -46,3 +46,7 @@ description: >-
 * Encryption (TLS 1.3) support (including autogenerating self-signed certificates)
 * Tested and confirmed support Windows, Darwin (MacOS), Linux, FreeBSD.
 
+### Requirements
+
+Go 1.15.x and above
+
