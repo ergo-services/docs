@@ -31,6 +31,7 @@
 * [Static Routes](advanced/static-routes.md)
 * [Proxy Mode](advanced/proxy-mode.md)
 * [Custom Behavior](advanced/custom-behavior.md)
+* [Custom Process](advanced/custom-process.md)
 * [Custom Handshake](advanced/custom-handshake.md)
 * [Custom Proto](advanced/custom-proto.md)
 
