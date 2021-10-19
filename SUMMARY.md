@@ -15,12 +15,12 @@
 
 ## Generic Behaviors
 
-* [Server](generic-behaviors/server.md)
+* [Server](generic-behaviors/server/README.md)
+  * [Stage](generic-behaviors/server/stage.md)
+  * [Saga](generic-behaviors/server/saga.md)
+  * [Raft](generic-behaviors/server/raft.md)
 * [Supervisor](generic-behaviors/supervisor.md)
 * [Application](generic-behaviors/application.md)
-* [Stage](generic-behaviors/stage.md)
-* [Saga](generic-behaviors/saga.md)
-* [Raft](generic-behaviors/raft.md)
 
 ## Advanced
 
