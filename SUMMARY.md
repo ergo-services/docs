@@ -12,8 +12,6 @@
 * [Distributed Nodes](basics/distributed-nodes/README.md)
   * [ETF/DIST](basics/distributed-nodes/etf-dist.md)
   * [EPMD](basics/distributed-nodes/epmd.md)
-* [Your First Application](basics/your-first-application.md)
-* [Add Cloud Support](basics/add-cloud-support.md)
 
 ## Generic Behaviors
 
@@ -23,6 +21,12 @@
   * [Raft](generic-behaviors/server/raft.md)
 * [Supervisor](generic-behaviors/supervisor.md)
 * [Application](generic-behaviors/application.md)
+
+## Practice
+
+* [Your First Application](practice/your-first-application.md)
+* [Supervise Them All](practice/supervise-them-all.md)
+* [Add Cloud Support](practice/add-cloud-support.md)
 
 ## Advanced
 
