@@ -8,6 +8,7 @@
 * [Supervision Tree](basics/supervision-tree.md)
 * [ETF/DIST](basics/etf-dist.md)
 * [Node](basics/node.md)
+* [EPMD](basics/epmd.md)
 * [Process](basics/process.md)
 * [Behavior](basics/behavior.md)
 * [Your First Application](basics/your-first-application.md)
@@ -26,6 +27,8 @@
 
 * [Node Options](advanced/node-options.md)
 * [Process Options](advanced/process-options.md)
+* [Static Routes](advanced/static-routes.md)
+* [Proxy Mode](advanced/proxy-mode.md)
 * [Custom Behavior](advanced/custom-behavior.md)
 * [Custom Handshake](advanced/custom-handshake.md)
 * [Custom Proto](advanced/custom-proto.md)
