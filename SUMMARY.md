@@ -6,11 +6,12 @@
 
 * [Actor Model](basics/actor-model.md)
 * [Supervision Tree](basics/supervision-tree.md)
-* [ETF/DIST](basics/etf-dist.md)
 * [Node](basics/node.md)
-* [EPMD](basics/epmd.md)
 * [Process](basics/process.md)
 * [Behavior](basics/behavior.md)
+* [Distributed Nodes](basics/distributed-nodes/README.md)
+  * [ETF/DIST](basics/distributed-nodes/etf-dist.md)
+  * [EPMD](basics/distributed-nodes/epmd.md)
 * [Your First Application](basics/your-first-application.md)
 * [Add Cloud Support](basics/add-cloud-support.md)
 
