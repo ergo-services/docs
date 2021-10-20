@@ -26,6 +26,7 @@
 
 * [Your First Application](practice/your-first-application.md)
 * [Supervise Them All](practice/supervise-them-all.md)
+* [Pool Of Workers](practice/pool-of-workers.md)
 * [Add Cloud Support](practice/add-cloud-support.md)
 
 ## Advanced
