@@ -50,3 +50,9 @@ description: >-
 
 Go 1.15.x and above
 
+### Translations
+
+This documentation is also available in the languages below:
+
+* [Russian](https://ru.docs.ergo.services)
+
