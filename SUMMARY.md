@@ -8,6 +8,7 @@
 * [Supervision Tree](basics/supervision-tree.md)
 * [Node](basics/node.md)
 * [Process](basics/process.md)
+* [Links And Monitors](basics/links-and-monitors.md)
 * [Behavior](basics/behavior.md)
 * [Distributed Nodes](basics/distributed-nodes/README.md)
   * [ETF/DIST](basics/distributed-nodes/etf-dist.md)
