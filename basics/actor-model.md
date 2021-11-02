@@ -1,5 +1,5 @@
 ---
-description:
+description: >-
   Акторная модель и ее свойства
 ---
 
