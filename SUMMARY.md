@@ -40,6 +40,7 @@
 * [Custom Process](advanced/custom-process.md)
 * [Custom Handshake](advanced/custom-handshake.md)
 * [Custom Proto](advanced/custom-proto.md)
+* [Custom Resolver](advanced/custom-resolver.md)
 
 ## Cloud
 
