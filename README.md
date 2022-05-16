@@ -1,23 +1,14 @@
----
-description: >-
-  Ergo Framework implements DIST protocol, ETF data format and OTP design
-  patterns gen.Server, gen.Supervisor, gen.Application which makes you able to
-  create distributed, high performance and reliable m
----
+# Введение
 
-# Обзор
-
-## Features
+## Возможности
 
 ![](.gitbook/assets/image.png)
 
-
-
-* Support Erlang 24 (including [Alias](https://blog.erlang.org/My-OTP-24-Highlights/#eep-53-process-aliases) and [Remote Spawn](https://blog.erlang.org/OTP-23-Highlights/#distributed-spawn-and-the-new-erpc-module) features)
-* Spawn Erlang-like processes
-* Register/unregister processes with simple atom
-* `gen.Server` behavior support (with atomic state)
-* `gen.Supervisor` behavior support with all known [restart strategies](https://erlang.org/doc/design\_principles/sup\_princ.html#restart-strategy) support
+* Поддержка Erlang 24 (включая [Alias](https://blog.erlang.org/My-OTP-24-Highlights/#eep-53-process-aliases) and [Remote Spawn](https://blog.erlang.org/OTP-23-Highlights/#distributed-spawn-and-the-new-erpc-module))
+* Запуск процессов в стиле Erlang
+* Регистрация процессов по имени, используя тип Atom (специализированные строки)
+* `gen.Server` шаблон (с поддержкой атомарного состояния данных процесса)
+* `gen.Supervisor` шаблон с поддержкой всех [restart strategies](https://erlang.org/doc/design\_principles/sup\_princ.html#restart-strategy)&#x20;
   * One For One
   * One For All
   * Rest For One
@@ -49,4 +40,3 @@ description: >-
 ### Requirements
 
 Go 1.15.x and above
-
