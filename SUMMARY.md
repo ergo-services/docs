@@ -6,10 +6,10 @@
 
 * [Actor Model](basics/actor-model.md)
 * [Supervision Tree](basics/supervision-tree.md)
+* [Behavior](basics/behavior.md)
 * [Node](basics/node.md)
 * [Process](basics/process.md)
 * [Links And Monitors](basics/links-and-monitors.md)
-* [Behavior](basics/behavior.md)
 * [Distributed Nodes](basics/distributed-nodes/README.md)
   * [ETF/DIST](basics/distributed-nodes/etf-dist.md)
   * [EPMD](basics/distributed-nodes/epmd.md)
