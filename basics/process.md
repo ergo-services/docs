@@ -112,7 +112,7 @@ func (gs *Server) HandleInfo(process *ServerProcess, message etf.Term) ServerSta
 
 Eсли необходимо обратиться к процессу из обычного golang-кода (не из другого процесса), то для этого необходимо иметь интерфейс процесса `gen.Process`, который возвращается функцией создания нового процесса `Spawn`. Используя метод `gen.Process.Direct(...)` можно сделать синхронный запрос процессу. В этом случае в процессе-получателе будет вызван callback метод `HandleDirect(...)`. Метод `gen.Process.Direct(...)` доступен только для локальных процессов. Для работы с удаленными процессами необходимо использовать методы `gen.Process.Send(...)`, `gen.ServerProcess.Cast(...)` или `gen.ServerProcess.Call(...)`.
 
-Поскольку интерфейс `gen.Process` встроен в `gen.ServerProcess` это позволяет вам использовать все методы gen.Process в рамках `gen.ServerProcess`, в том числе методы `Send` и `Direct`.
+Поскольку интерфейс `gen.Process` встроен в `gen.ServerProcess` это позволяет вам использовать все методы `gen.Process` в рамках `gen.ServerProcess`, в том числе методы `Send` и `Direct`.
 
 ### Останов процесса
 
