@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Введение](README.md)
+* [Overview](README.md)
 
 ## Basics
 
