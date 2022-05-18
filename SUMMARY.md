@@ -36,10 +36,12 @@
 * [Process Options](advanced/process-options.md)
 * [Static Routes](advanced/static-routes.md)
 * [Proxy Mode](advanced/proxy-mode.md)
-* [Custom Behavior](advanced/custom-behavior.md)
-* [Custom Process](advanced/custom-process.md)
-* [Custom Handshake](advanced/custom-handshake.md)
-* [Custom Proto](advanced/custom-proto.md)
+* [Customization](advanced/customization/README.md)
+  * [Behavior](advanced/customization/custom-behavior.md)
+  * [Process](advanced/customization/custom-process.md)
+  * [Resolver](advanced/customization/resolver.md)
+  * [Handshake](advanced/customization/custom-handshake.md)
+  * [Proto](advanced/customization/custom-proto.md)
 
 ## Cloud
 
