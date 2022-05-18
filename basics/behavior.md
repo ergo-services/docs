@@ -1,2 +1,3 @@
 # Behavior
 
+Термин behavior унаследован
