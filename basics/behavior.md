@@ -27,7 +27,7 @@ type ProcessBehavior interface {
 
 Eсли вы не реализуете какой-либо из обязательных методов, при попытке запустить процесс вы получите ошибку. Например, для `gen.Raft` вы получите `"Raft: not a RaftBehavior"`, а для `gen.Saga` - `"Saga: not a SagaBehavior"`.
 
-Как реализовать реализовать свой behavior смотрите раздел [Custom Behavior.](../advanced/customization/custom-behavior.md) Вам также может быть интересным посмотреть пример, предлагаемый в директории [examples/gendemo](https://github.com/ergo-services/ergo/tree/master/examples/gendemo).
+Как реализовать реализовать свой behavior смотрите [Customization/Behavior.](../advanced/customization/custom-behavior.md) Вам также может быть интересным посмотреть пример, предлагаемый в директории [examples/gendemo](https://github.com/ergo-services/ergo/tree/master/examples/gendemo).
 
 
 
