@@ -22,8 +22,7 @@ description: Что такое процесс в Ergo Framework
 ```go
 type Example struct {
     gen.Server
-    dataA string
-    dataB int
+    data string
 }
 ```
 
@@ -55,8 +54,7 @@ Spawn(name string,
 ```go
 type Example struct {
     gen.Server
-    dataA string
-    dataB int
+    data string
 }
 
 func (e *Example) Init(process *gen.ServerProcess, args ... etf.Term) error {
@@ -98,16 +96,40 @@ func (gs *Server) HandleInfo(process *ServerProcess, message etf.Term) ServerSta
 В референсной документации к любому behavior вы найдете указания, какие методы являются обязательными, а какие опциональными. Обратите на это внимание, когда будете их использовать.
 
 {% hint style="danger" %}
-Если вы используете один и тот же объект для старта нескольких процессов, все данные этого объекта являются разделяемыми для всех этих процессов. Например, в реализации`gen.Supervisor` дочерние процессы запускаются используя один и тот же объект, указанный в спецификации супервизора при его инициализации.&#x20;
-
-В приведенном примере `Example` переменные`dataA` и `dataB` будут разделяемыми между всеми процессами, которые будут запущены с использованием одного и того же объекта \&Example{}.&#x20;
-
-Для приватных данных у каждого gen.ServerProcess процесса имеется поле State с типом `interface{}`. Вы можете использовать его для любых данных.
-{% endhint %}
-
-{% hint style="danger" %}
 Среди всех behavior важно отметить `gen.Application`. Методы `node.Node.Spawn(...)` и `gen.Process.Spawn(...)` не смогут запустить процесс с использованием объекта на базе `gen.Application`. Они всегда будут возвращать ошибку `"ProcessInit: not an ApplicationBehavior"`. Для запуска процесса-приложение в интерфейсе `node.Node` существуют специальные методы `ApplicationLoad`, `ApplicationStart` и т.д. Более подробно о приложениях, их свойствах и методах работы с ними вы можете почитать в разделе [Application](../generic-behaviors/application.md).
 {% endhint %}
+
+### State процесса
+
+Если вы используете один и тот же объект для старта нескольких процессов, все данные этого объекта являются разделяемыми для всех этих процессов. Например, в реализации`gen.Supervisor` дочерние процессы запускаются используя один и тот же объект, указанный в спецификации супервизора при его инициализации.&#x20;
+
+Для приватных данных у каждого gen.ServerProcess процесса имеется поле State с типом `interface{}`. Вы можете использовать его для любых данных.
+
+Ниже приведен пример, демонстрирующий разделяемые данные и приватные для процессов, запущенных используя один и тот же объект
+
+```go
+type private struct {
+   i int
+}
+
+type Example struct {
+	gen.Server
+	shared int
+}
+
+func (e *Example) Init(process *gen.ServerProcess, args ...etf.Term) error {	
+	process.State = &private{i: 123} 
+	e.shared = 567
+	return nil
+}
+func (e *Example) HandleCast(process *gen.ServerProcess, message etf.Term) gen.ServerStatus {
+	state := process.State.(*private)
+	fmt.Printf("[%s] HandleCast: %#v\n", process.Self(), state)
+	return gen.ServerStatusOK
+}
+```
+
+В данном примере поле `shared` в объекте будeт разделяемым между всеми процессами, которые будут запущены с использованием одного и того же объекта `&Example{}`. Вместе с тем, `process.State` будет хранить приватные данные доступные только самому процессу.
 
 ### Взаимодействие с процессом
 
