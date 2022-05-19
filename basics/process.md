@@ -105,7 +105,9 @@ func (gs *Server) HandleInfo(process *ServerProcess, message etf.Term) ServerSta
 Для приватных данных у каждого gen.ServerProcess процесса имеется поле State с типом `interface{}`. Вы можете использовать его для любых данных.
 {% endhint %}
 
-Среди всех behavior важно отметить `gen.Application`. Методы `node.Node.Spawn(...)` и `gen.Process.Spawn(...)` не смогут запустить процесс с использование объекта на базе gen.Application. Они всегда будут возвращать ошибку `"ProcessInit: not an ApplicationBehavior"`. Для запуска процесса-приложение в интерфейсе `node.Node` существуют специальные методы `ApplicationLoad`, `ApplicationStart` и т.д. Более подробно о приложениях, их свойствах и методах работы с ними вы можете почитать в разделе [Application](../generic-behaviors/application.md).
+{% hint style="danger" %}
+Среди всех behavior важно отметить `gen.Application`. Методы `node.Node.Spawn(...)` и `gen.Process.Spawn(...)` не смогут запустить процесс с использованием объекта на базе `gen.Application`. Они всегда будут возвращать ошибку `"ProcessInit: not an ApplicationBehavior"`. Для запуска процесса-приложение в интерфейсе `node.Node` существуют специальные методы `ApplicationLoad`, `ApplicationStart` и т.д. Более подробно о приложениях, их свойствах и методах работы с ними вы можете почитать в разделе [Application](../generic-behaviors/application.md).
+{% endhint %}
 
 ### Взаимодействие с процессом
 
