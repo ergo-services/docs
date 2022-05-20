@@ -13,8 +13,8 @@
 * [Distributed Nodes](basics/distributed-nodes/README.md)
   * [ETF/DIST](basics/distributed-nodes/etf-dist.md)
   * [EPMD](basics/distributed-nodes/epmd.md)
-  * [Static Routes](basics/distributed-nodes/static-routes.md)
-  * [Proxy Mode](basics/distributed-nodes/proxy-mode.md)
+  * [Static Routes](advanced/static-routes.md)
+  * [Proxy Mode](advanced/proxy-mode.md)
 
 ## Generic Behaviors
 
@@ -34,8 +34,6 @@
 
 ## Advanced
 
-* [Node Options](advanced/node-options.md)
-* [Process Options](advanced/process-options.md)
 * [Customization](advanced/customization/README.md)
   * [Behavior](advanced/customization/custom-behavior.md)
   * [Process](advanced/customization/custom-process.md)
