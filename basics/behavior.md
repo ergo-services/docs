@@ -4,7 +4,7 @@ description: Что такое behavior
 
 # Behavior
 
-Термином behavior называются готовые к использованию дизайн-паттерны. Например, [`gen.Server`](../generic-behaviors/server/), [`gen.Supervisor`](../generic-behaviors/supervisor.md) и [`gen.Application`](../generic-behaviors/application.md). Они являются дизайн-паттернами общего назначения.  Также, в Ergo Framework на базе `gen.Server` реализованы специализированные дизайн-паттерны: [`gen.Stage`](../generic-behaviors/server/stage.md), [`gen.Saga`](../generic-behaviors/server/saga.md) и [`gen.Raft`](../generic-behaviors/server/raft.md).&#x20;
+Термином behavior называются готовые к использованию дизайн-паттерны. Например, [`gen.Server`](../generic-behaviors/server/), [`gen.Supervisor`](../generic-behaviors/supervisor.md) и [`gen.Application`](../generic-behaviors/application.md). Они являются дизайн-паттернами общего назначения.  Также, в Ergo Framework на базе `gen.Server` реализованы специализированные дизайн-паттерны: [`gen.BFF`](../generic-behaviors/server/bff.md), [`gen.Stage`](../generic-behaviors/server/stage.md), [`gen.Saga`](../generic-behaviors/server/saga.md) и [`gen.Raft`](../generic-behaviors/server/raft.md).&#x20;
 
 Теримин behavior был унаследован из Erlang и, чтобы избежать путаницы в терминологии, в дальнейшем будем использовать только его.
 
