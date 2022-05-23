@@ -19,7 +19,7 @@
 ## Generic Behaviors
 
 * [Server](generic-behaviors/server/README.md)
-  * [BFF](generic-behaviors/server/bff.md)
+  * [Web](generic-behaviors/server/web.md)
   * [Stage](generic-behaviors/server/stage.md)
   * [Saga](generic-behaviors/server/saga.md)
   * [Raft](generic-behaviors/server/raft.md)
